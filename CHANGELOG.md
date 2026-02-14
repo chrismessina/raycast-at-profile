@@ -1,5 +1,10 @@
 # @ Profile Changelog
 
+## [Add YouTube brand profiles] - {PR_MERGE_DATE}
+
+- Added YouTube brand profile support (@brand)
+- Updated dependencies and ESLint configuration
+
 ## [Prevent Infinite Loop in Open Profile and add Screenshots] - 2025-08-08
 
 ### Added

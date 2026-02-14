@@ -2,7 +2,7 @@
 
 ## Pending
 
-- [ ] Add the ability to favorite or pin profiles.
+- [ ] Add the ability to favorite profiles.
 
 ## Completed
 

@@ -45,14 +45,12 @@ export function HistoryActionPanels({
         shortcut={{ modifiers: ["cmd"], key: "e" }}
       />
       <Action.Push
-        // eslint-disable-next-line @raycast/prefer-title-case
         title={`Open @${item.profile} on…`}
         icon={Icon.Terminal}
         target={<OpenProfileCommand arguments={{ profile: item.profile }} />}
         shortcut={{ modifiers: ["cmd"], key: "o" }}
       />
       <Action
-        // eslint-disable-next-line @raycast/prefer-title-case
         title={`Copy Profile URL`}
         icon={Icon.Clipboard}
         onAction={async () => {
