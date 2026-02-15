@@ -1,7 +1,9 @@
 # @ Profile Changelog
 
-## [Add YouTube brand profiles] - {PR_MERGE_DATE}
+## [Added starring and YouTube brand profiles] - {PR_MERGE_DATE}
 
+- Added starring functionality for profile history
+- Added AI tool support for starring and unstarring profiles
 - Added YouTube brand profile support (@brand)
 - Updated dependencies and ESLint configuration
 
