@@ -1,7 +1,7 @@
-import { ActionPanel, Action, Icon, Keyboard, LaunchType } from "@raycast/api";
-import ManageAppsCommand from "./ManageApps";
-import HistoryCommand from "../history";
+import { Action, ActionPanel, Icon, Keyboard, LaunchType } from "@raycast/api";
 import CustomAppForm from "../forms/custom-app-form";
+import HistoryCommand from "../history";
+import ManageAppsCommand from "./ManageApps";
 
 // Wrapper component for ManageAppsCommand to handle LaunchProps
 function ManageAppsWrapper() {

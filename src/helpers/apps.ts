@@ -1,4 +1,4 @@
-import { LocalStorage, Icon } from "@raycast/api";
+import { Icon, LocalStorage } from "@raycast/api";
 import { getFavicon } from "@raycast/utils";
 import { App, AppSetting, UsageHistoryItem } from "../types";
 import { defaultApps } from "../utils/default-apps";

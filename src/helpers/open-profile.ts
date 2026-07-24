@@ -1,9 +1,9 @@
 import { open, showHUD } from "@raycast/api";
-import { withErrorHandling } from "../utils/errors";
-import { getAllApps, getAllAppsUnfiltered, addToUsageHistory } from "./apps";
-import { getAppByValue } from "./custom-app-utils";
-import { sanitizeUrl } from "../utils/url-sanitize";
 import { App } from "../types";
+import { withErrorHandling } from "../utils/errors";
+import { sanitizeUrl } from "../utils/url-sanitize";
+import { addToUsageHistory, getAllApps, getAllAppsUnfiltered } from "./apps";
+import { getAppByValue } from "./custom-app-utils";
 
 /**
  * Opens a profile on a social app

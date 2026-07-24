@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Form } from "@raycast/api";
 import { useCachedPromise, useLocalStorage } from "@raycast/utils";
-import { getUsageHistory, getAppFavicon } from "../helpers/apps";
+import OpenActionPanels from "../components/OpenActionPanels";
+import { getAppFavicon, getUsageHistory } from "../helpers/apps";
 import { openProfile } from "../helpers/open-profile";
 import { useApps } from "../hooks/useApps";
-import { showError } from "../utils/errors";
 import { OpenProfileFormProps } from "../types";
-import OpenActionPanels from "../components/OpenActionPanels";
+import { showError } from "../utils/errors";
 
 export default function OpenProfileForm({ initialProfile, initialApp }: OpenProfileFormProps) {
   const { apps, isLoading: isLoadingApps, revalidate } = useApps();

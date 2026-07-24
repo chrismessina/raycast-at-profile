@@ -1,8 +1,8 @@
 import { LocalStorage } from "@raycast/api";
-import { showError, showSuccess, withErrorHandling } from "../utils/errors";
-import { getCustomApps, getAppSettings, updateAppSettings, STORAGE_KEYS } from "./apps";
-import { defaultApps } from "../utils/default-apps";
 import { App, CustomAppInput, CustomAppUpdate } from "../types";
+import { defaultApps } from "../utils/default-apps";
+import { showError, showSuccess, withErrorHandling } from "../utils/errors";
+import { getAppSettings, getCustomApps, STORAGE_KEYS, updateAppSettings } from "./apps";
 
 /**
  * Validates that a value is slug-safe (only contains lowercase letters, numbers, and hyphens)
