@@ -1,9 +1,9 @@
-import { useEffect, useReducer } from "react";
 import { Icon, List, open, showHUD } from "@raycast/api";
-import { runAppleScript } from "@raycast/utils";
 import { ImportActionPanels } from "./components";
+import { runAppleScript } from "@raycast/utils";
 import { safeAsyncOperation } from "./utils/errors";
 import { importSettingsFromFile } from "./yaml-settings";
+import { useEffect, useReducer } from "react";
 
 type State = {
   isLoading: boolean;

@@ -1,8 +1,8 @@
+import { ActionPanel, Action, Form, useNavigation, Icon } from "@raycast/api";
 import { useState } from "react";
-import { Action, ActionPanel, Form, Icon, useNavigation } from "@raycast/api";
 import { addCustomApp, updateCustomApp } from "../helpers/custom-app-utils";
-import { CustomAppFormProps, CustomAppInput } from "../types";
 import { safeAsyncOperation } from "../utils/errors";
+import { CustomAppFormProps, CustomAppInput } from "../types";
 
 export default function CustomAppForm({ app, onSave }: CustomAppFormProps) {
   const { pop } = useNavigation();

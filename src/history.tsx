@@ -1,21 +1,21 @@
 import React from "react";
-import { Icon, List } from "@raycast/api";
+import { List, Icon } from "@raycast/api";
 import { useCachedPromise, useLocalStorage } from "@raycast/utils";
 import { HistoryActionPanels } from "./components";
 import {
-  clearStarredHistoryItems,
-  getAppFavicon,
-  getHistoryPairKey,
-  getStarredHistoryPairs,
   getUsageHistory,
+  getAppFavicon,
   removeUsageHistoryItem,
+  getStarredHistoryPairs,
+  getHistoryPairKey,
   toggleStarredHistoryItem,
+  clearStarredHistoryItems,
 } from "./helpers/apps";
-import { getAppByValue } from "./helpers/custom-app-utils";
 import { openProfile } from "./helpers/open-profile";
-import OpenProfileCommand from "./open-profile";
-import { formatRelativeDate } from "./utils/date";
+import { getAppByValue } from "./helpers/custom-app-utils";
 import { safeAsyncOperation } from "./utils/errors";
+import { formatRelativeDate } from "./utils/date";
+import OpenProfileCommand from "./open-profile";
 
 export default function HistoryCommand() {
   const {

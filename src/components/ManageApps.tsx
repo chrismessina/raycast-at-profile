@@ -1,13 +1,13 @@
+import { List, Icon, confirmAlert, Alert, Color, Clipboard, LaunchProps } from "@raycast/api";
 import { useEffect } from "react";
-import { Alert, Clipboard, Color, confirmAlert, Icon, LaunchProps, List } from "@raycast/api";
 import { useCachedPromise } from "@raycast/utils";
-import { AppManagementActionPanels, UtilityActionPanels } from "../components";
-import { getAppFavicon, getAppSettings, getCustomApps, updateAppSettings } from "../helpers/apps";
-import { removeCustomApp } from "../helpers/custom-app-utils";
-import { App, AppItem, ManageAppsArguments } from "../types";
+import { showSuccess, withErrorHandling, safeAsyncOperation } from "../utils/errors";
+import { getCustomApps, getAppSettings, updateAppSettings, getAppFavicon } from "../helpers/apps";
 import { defaultApps } from "../utils/default-apps";
-import { safeAsyncOperation, showSuccess, withErrorHandling } from "../utils/errors";
+import { removeCustomApp } from "../helpers/custom-app-utils";
+import { AppManagementActionPanels, UtilityActionPanels } from "../components";
 import { exportSettingsToFile, importSettingsFromFile } from "../yaml-settings";
+import { AppItem, ManageAppsArguments, App } from "../types";
 
 export default function ManageAppsCommand(props: LaunchProps<{ arguments: ManageAppsArguments }>) {
   const { action } = props.arguments;

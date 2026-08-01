@@ -1,7 +1,7 @@
-import { Action, ActionPanel, Clipboard, Icon, Keyboard } from "@raycast/api";
+import { ActionPanel, Action, Icon, Clipboard, Keyboard } from "@raycast/api";
 import { HistoryItem } from "../types";
-import { safeAsyncOperation, showSuccess } from "../utils/errors";
 import { EditProfileForm } from "./EditProfile";
+import { safeAsyncOperation, showSuccess } from "../utils/errors";
 
 interface HistoryActionPanelsProps {
   item: HistoryItem;

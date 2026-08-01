@@ -1,9 +1,9 @@
 import {
-  getAllApps,
-  getStarredUsageHistory,
   getUsageHistory,
-  isHistoryItemStarred,
+  getStarredUsageHistory,
   toggleStarredHistoryItem,
+  isHistoryItemStarred,
+  getAllApps,
 } from "../helpers/apps";
 import { getAppByValue } from "../helpers/custom-app-utils";
 import { formatRelativeDate } from "../utils/date";
