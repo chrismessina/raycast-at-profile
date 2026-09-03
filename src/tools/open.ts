@@ -1,8 +1,8 @@
 import { open } from "@raycast/api";
-import { getAllApps, addToUsageHistory } from "../helpers/apps";
+import { addToUsageHistory, getAllApps } from "../helpers/apps";
+import { Input } from "../types";
 import { safeAsyncOperation, showError } from "../utils/errors";
 import { sanitizeUrl } from "../utils/url-sanitize";
-import { Input } from "../types";
 
 /**
  * Opens a profile on a specified social app

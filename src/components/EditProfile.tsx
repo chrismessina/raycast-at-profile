@@ -1,5 +1,5 @@
-import { Form, ActionPanel, Action, popToRoot } from "@raycast/api";
 import { useState } from "react";
+import { Action, ActionPanel, Form, popToRoot } from "@raycast/api";
 import { updateUsageHistoryItem } from "../helpers/apps";
 import { showError, showSuccess, withErrorHandling } from "../utils/errors";
 
