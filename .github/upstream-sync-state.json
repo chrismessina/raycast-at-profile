@@ -1,6 +1,6 @@
 {
-  "upstream_commit": "288c357f9eefe58a9a6cd84a286b71ecbc9cf910",
-  "synced_at": "2026-11-11T18:17:36Z",
+  "upstream_commit": "3627d9b15ba4506ca8c8ac9d93c4585c5d2ec7ae",
+  "synced_at": "2026-11-16T22:56:43Z",
   "files": {
     ".gitignore": "d1b9c8e9d49d318c9cd47bd8ace90e73aea12b71",
     ".prettierignore": "2613506ce0cacddd4edf7ae2280418684188802d",
@@ -55,7 +55,7 @@
     "metadata/at-profile-5.png": "3d093a47195baf1e6764fefc084249c1499b1182",
     "metadata/at-profile-6.png": "0ded0c9007c8d420bd2282871043d8b353ca2913",
     "package-lock.json": "4ad5e1dc2ac0d8d86c352ee7e73dccb908059dc8",
-    "package.json": "9e4abc2e1ad88291531c24e553505f306668571c",
+    "package.json": "32bdaf3ac39d74b533ae07101fb806259ec4348f",
     "scripts/favicons.ts": "503b14be174c5445cce6efa08ca805cc970cdafc",
     "scripts/sync-catalog.ts": "db6d581fa734edb702e98c0b72f2525b1ad198d8",
     "scripts/sync-favicons.ts": "8b75f22a3decaf25ee925da7f9bb6e3b72985d6a",
