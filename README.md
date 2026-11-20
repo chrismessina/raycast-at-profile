@@ -95,28 +95,4 @@ Export your settings to YAML format for:
 
 The site catalog comes from the [Sherlock project](https://github.com/sherlock-project/sherlock), MIT License, Copyright (c) 2019 Sherlock Project. The platform checks are this extension's own, inspired by [social-analyzer](https://github.com/qeeqbox/social-analyzer)'s shared detections.
 
-## Development
-
-### Architecture
-
-The extension now uses a dynamic app system:
-
-- App data is managed through `src/helpers/apps.ts`
-- Custom apps are stored using Raycast's local storage
-- App settings (show/hide) are persisted separately
-
-### Adding Built-in Apps
-
-To add new default apps, edit `src/utils/default-apps.ts`:
-
-```typescript
-export const defaultApps: App[] = [
-  // ... existing apps
-  {
-    name: "New App",
-    value: "newapp",
-    urlTemplate: "https://newapp.com/{profile}",
-    placeholder: "username",
-  },
-];
-```
+Want to contribute? See [CONTRIBUTING.md](https://github.com/chrismessina/raycast-at-profile/blob/main/CONTRIBUTING.md).

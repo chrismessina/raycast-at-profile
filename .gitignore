@@ -20,3 +20,6 @@ CLAUDE.md
 
 # Contributor notes, kept in the mirror but not published to the Store
 AGENTS.md
+
+# Mirror-only contributor guide, kept out of the Store PR (see contributing-template.md)
+CONTRIBUTING.md
