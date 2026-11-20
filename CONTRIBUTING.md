@@ -6,13 +6,13 @@ Thanks for helping. This guide covers running @ Profile locally and sending a ch
 
 @ Profile is published in the [Raycast Store](https://www.raycast.com/chrismessina/at-profile).
 Open pull requests against [`raycast/extensions`](https://github.com/raycast/extensions/tree/main/extensions/at-profile),
-not this repository: Raycast reviews every change there, and merged changes sync back here
-automatically. Open [issues](https://github.com/chrismessina/raycast-at-profile/issues) here or in
+not this repository: Raycast reviews every change there, and merged changes come back here in a
+sync pull request. Open [issues](https://github.com/chrismessina/raycast-at-profile/issues) here or in
 `raycast/extensions`, whichever you prefer.
 
 ## Run it locally
 
-You need [Raycast](https://www.raycast.com/) and Node.js 22 or later.
+You need [Raycast](https://www.raycast.com/) and Node.js 22.22.2 or later.
 
 1. In Raycast, find @ Profile in the Store and choose **Fork Extension** from the action panel.
    Raycast checks out only this extension's folder from `raycast/extensions`.
@@ -31,8 +31,10 @@ You need [Raycast](https://www.raycast.com/) and Node.js 22 or later.
 | `npm run evals` | Run the AI evals in `ai.yaml` |
 | `npm run sync-catalog` | Refresh `src/catalog/sherlock.json` from Sherlock's site list, probing each site, then the favicons |
 | `npm run sync-favicons` | Refresh the bundled favicons without probing the catalog |
+| `npm run publish` | Open or update the pull request in `raycast/extensions` (`ray publish`) |
+| `prepublishOnly` | Stops `npm publish`: the extension goes to the Raycast Store, never to the npm registry |
 
-Run `sync-catalog` from a normal connection: under a sandbox or a throttled network most sites come
+Run `sync-catalog` from a normal connection. Under a sandbox or a throttled network most sites come
 back unverified. `CONCURRENCY` sets how many sites it probes at once (default 8).
 
 ## How it works
